@@ -44,3 +44,14 @@ header ul li a
     color: #111;
     text-decoration: none;
 }
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background: url(bg1.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000000;
+}
