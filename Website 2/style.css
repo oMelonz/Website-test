@@ -5,53 +5,88 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-header 
+header .logo
+{
+    color: #111;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+header .logo:hover
+{
+    color: rgb(125, 155, 255);
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+header
 {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    padding: 40px 50px;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
 }
-header .logo
-{
-    display: flex;
-    font-size: 2em;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 40px 80px;
-    text-decoration: none;
-    color: #111;
-    font-weight: 600;
-}
 header ul
 {
     display: flex;
     position: relative;
+    padding: 15px 100px;
 }
 header ul li
 {
+    position: relative;
     list-style: none;
-    display: flex;
-    margin: 0 15px;
 }
 header ul li a
 {
+    margin: 0 15px;
+    display: inline-block;
     color: #111;
     text-decoration: none;
+    position: relative;
+    transition: 0.5s;
+}
+header ul li a:hover
+{
+    color: #fff;
 }
 .banner
 {
     position: relative;
+    width: 100%;
     min-height: 100vh;
-    background: url('../bg1.jpg');
-    background-size: cover;
-    background-position: right;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    background: url('bg1.jpg');
+    background-size: cover;
+}
+.banner .content
+{
+    font-size: 3em;
+}
+.banner .content h1
+{
+    font-weight: 500;
+    transition: 1s;
+    font-size: 2.5em;
+    color: beige;
+}
+.banner .content h1:hover
+{
+    letter-spacing: 5px;
+}
+.banner .content p
+{
+    font-size: 0.3em;
+    color: #fff;
+    text-align: center;
 }
