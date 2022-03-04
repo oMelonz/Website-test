@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 header .logo
 {
@@ -58,35 +59,59 @@ header ul li a:hover
 {
     color: #fff;
 }
-.banner
-{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('bg1.jpg');
+* {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* The image used */
+    background-image: url("bg1.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(3px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-}
-.banner .content
-{
-    font-size: 3em;
-}
-.banner .content h1
-{
-    font-weight: 500;
-    transition: 1s;
-    font-size: 2.5em;
-    color: beige;
-}
-.banner .content h1:hover
-{
-    letter-spacing: 5px;
-}
-.banner .content p
-{
-    font-size: 0.3em;
-    color: #fff;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
     text-align: center;
-}
+    font-size: 3em;
+  }
+  .bg-text h1
+  {
+    font-weight: 500;
+    transition: 0.5s;
+  }
+  .bg-text h1:hover
+  {
+      letter-spacing: 2px;
+  }
+  .btn {
+    background-color: #4c82af; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    border-radius: 15px;
+    justify-content: center;
+    position: absolute;
+  }
